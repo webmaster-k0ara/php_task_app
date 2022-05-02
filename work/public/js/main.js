@@ -16,4 +16,12 @@
       span.parentNode.submit();
     });
   });
+
+  const purge = document.querySelector('.purge');
+  purge.addEventListener('click', () => {
+    if (!confirm('are you sure?')) {
+      return;
+    }
+    purge.parentNode.submit();
+  });
 }
